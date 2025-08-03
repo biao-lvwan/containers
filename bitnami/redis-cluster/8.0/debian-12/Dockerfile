@@ -14,7 +14,8 @@ LABEL com.vmware.cp.artifact.flavor="sha256:c50c90cfd9d12b445b011e6ad529f1ad3dae
       org.opencontainers.image.source="https://github.com/bitnami/containers/tree/main/bitnami/redis-cluster" \
       org.opencontainers.image.title="redis-cluster" \
       org.opencontainers.image.vendor="Broadcom, Inc." \
-      org.opencontainers.image.version="8.0.3"
+       org.opencontainers.image.version="8.0.3"
+      #org.opencontainers.image.version="7.4.0"
 
 ENV HOME="/" \
     OS_ARCH="${TARGETARCH:-amd64}" \
@@ -56,5 +57,6 @@ ENV APP_VERSION="8.0.3" \
 EXPOSE 6379
 
 USER 1001
-ENTRYPOINT [ "/opt/bitnami/scripts/redis-cluster/entrypoint.sh" ]
-CMD [ "/opt/bitnami/scripts/redis-cluster/run.sh" ]
+#ENTRYPOINT [ "/opt/bitnami/scripts/redis-cluster/entrypoint.sh" ]
+#CMD [ "/opt/bitnami/scripts/redis-cluster/run.sh" ]
+CMD ["tail", "-f", "/dev/null"]

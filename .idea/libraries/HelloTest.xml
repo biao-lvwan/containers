@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="HelloTest">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/.vib/java/goss/testfiles/HelloTest.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
